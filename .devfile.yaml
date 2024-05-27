@@ -12,7 +12,7 @@ metadata:
   provider: Marcio Aleixo
   version: 1.0.0
 starterProjects:
-  - name: ts-react-frontend
+  - name: react-frontend
     git:
       checkoutFrom:
         revision: main
