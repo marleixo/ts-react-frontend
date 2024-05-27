@@ -1,33 +1,31 @@
 schemaVersion: 2.2.0
 metadata:
-  name: nodejs-react
+  name: marleixo-frontend
   displayName: React
-  description:
-    "React is a free and open-source front-end JavaScript library for building user interfaces based on UI components.
-    It is maintained by Meta and a community of individual developers and companies."
+  description: "Mine all mine"
   icon: https://raw.githubusercontent.com/devfile-samples/devfile-stack-icons/main/react.svg
   tags:
     - Node.js
     - React
   projectType: React
   language: TypeScript
-  provider: Red Hat
-  version: 2.2.1
+  provider: Marcio Aleixo
+  version: 1
 starterProjects:
-  - name: nodejs-frontend
+  - name: ts-react-frontend
     git:
       checkoutFrom:
         revision: main
       remotes:
-        origin: https://github.com/devfile-samples/devfile-stacks-nodejs-react.git
+        origin: https://github.com/marleixo/ts-react-frontend.git
 components:
   - container:
       endpoints:
         - name: https-react
           targetPort: 3000
           protocol: https
-      image: node:lts-alpine3.20
-      args: ["tail", "-f", "/dev/null"]
+      image: index.docker.io/library/node:lts-alpine3.20
+      # args: ["tail", "-f", "/dev/null"]
       memoryLimit: 1024Mi
     name: runtime
 commands:
