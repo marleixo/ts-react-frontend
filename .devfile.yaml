@@ -24,8 +24,8 @@ components:
         - name: https-react
           targetPort: 3000
           protocol: https
-      image: ubi9/nodejs-20
-      # args: ["tail", "-f", "/dev/null"]
+      image: quay.io/redhat-user-workloads/karthik-jk-tenant/common-nodejs-parent/node-express-hello-skq1
+      args: ["tail", "-f", "/dev/null"]
       memoryLimit: 1024Mi
     name: runtime
 commands:
