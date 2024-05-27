@@ -10,7 +10,7 @@ metadata:
   projectType: React
   language: TypeScript
   provider: Marcio Aleixo
-  version: 1.0
+  version: 1.0.0
 starterProjects:
   - name: ts-react-frontend
     git:
