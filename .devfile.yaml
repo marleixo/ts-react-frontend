@@ -24,7 +24,7 @@ components:
         - name: https-react
           targetPort: 3000
           protocol: https
-      image: index.docker.io/library/node:lts-alpine3.20
+      image: ubi9/nodejs-20
       # args: ["tail", "-f", "/dev/null"]
       memoryLimit: 1024Mi
     name: runtime
