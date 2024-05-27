@@ -10,7 +10,7 @@ components:
           targetPort: 3000
           protocol: https
       args: ["tail", "-f", "/dev/null"]
-      memoryLimit: 1G
+      memoryLimit: 2G
 commands:
   - id: install
     exec:
